@@ -1,0 +1,75 @@
+.home {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f4f6f8;
+  
+    .skeleton-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+      .skeleton-container {
+          grid-template-columns: repeat(2, 1fr); 
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .skeleton-container {
+          grid-template-columns: repeat(1, 1fr);
+      }
+  }
+  
+
+ 
+  
+  
+    .home_container {
+      flex: 6;
+      padding-bottom: 3rem;
+      padding-top: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      
+      
+      .scrollview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%; 
+        overflow: hidden; 
+      }
+      
+  
+      .scrollview {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem; 
+        max-height: 820px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        padding: 1rem;
+  
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: repeat(2, 1fr); 
+        }
+  
+        @media screen and (max-width: 900px) {
+          grid-template-columns: 1fr; 
+          max-height: 100vh;
+          overflow-y: scroll;
+        }
+      }
+  
+        }
+      }
+    
+  

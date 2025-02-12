@@ -1,0 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgba(236, 235, 236);
+}
+
+.loading-indicator-wrapper {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: rgba(255, 255, 255, 0.75);
+  
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; 
+  font-size: 24px; 
+}
+
+
+:root {
+  --primary-color: rgb(157, 0, 255);
+  --primary-dark: rgb(56, 4, 88);
+  --white: #fff;
+  --button-bg-color: rgb(93, 109, 126);
+  --button-hover-color: rgb(43, 49, 56);
+
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  --transition: 0.3s ease;
+}
+
+.form_btn {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background: rgb(51, 51, 51);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.refer_btn {
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.form_btn_delete {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background: red;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.form_btn:active {
+  background: var(--primary-dark);
+}
