@@ -4,13 +4,13 @@ import { fetchData, clearError } from '../../redux/actions/dataAction';
 import "./navbar.scss";
 
 const Navbar = () => {
-    const [selectedCourse, setSelectedCourse] = useState("");
+    const [selectedCourse, setSelectedCourse] = useState("default");
     const dispatch = useDispatch();
     const { Data, error } = useSelector((state) => state.data);
 
 
     useEffect(() => {
-        if (selectedCourse || selectedCourse == "") {
+        if (selectedCourse) {
             dispatch(clearError()); 
             dispatch(fetchData(selectedCourse));
         }
