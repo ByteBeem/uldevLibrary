@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = "http://localhost:5092"; 
-const prodURL = "libararyserver-a2bvbtdwbpa9ddab.southafricanorth-01.azurewebsites.net";
+const prodURL = "https://libararyserver-a2bvbtdwbpa9ddab.southafricanorth-01.azurewebsites.net";
 
 export const fetchData = (course) => async (dispatch) => {
     dispatch({ type: "DATA_FETCH_REQUEST" });
